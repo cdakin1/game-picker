@@ -1,0 +1,96 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <link rel="icon" href="../../../../favicon.ico">
+
+    <title>Starter Template for Bootstrap</title>
+
+    <!-- Bootstrap core CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.3/css/bootstrap.min.css" integrity="sha384-Zug+QiDoJOrZ5t4lssLdxGhVrurbmBWopoEl+M6BdEfwnCJZtKxi1KgxUyJq13dy" crossorigin="anonymous">
+    <!-- Custom styles for this template -->
+    <link href="app.css" rel="stylesheet">
+</head>
+
+<body>
+
+    <nav class="navbar navbar-expand-md navbar-dark bg-dark fixed-top">
+        <a class="navbar-brand" href="#">Game Picker</a>
+    </nav>
+
+    <main role="main" class="container">
+        <div id="wrapper" class="toggled">
+            <!-- Sidebar -->
+            <div id="sidebar-wrapper">
+                <ul class="sidebar-nav">
+
+                    <br />
+                    <li style="width: 7rem;">
+                        <img class="card-img-top game" src="pics/pubg.jpg" alt="PUBG" name="PUBG">
+                    </li>
+                    <li style="width: 7rem;">
+                        <img class="card-img-top game" src="pics/lol.jpg" alt="LoL" name="League of Legends">
+                    </li>
+                    <li style="width: 7rem;">
+                        <img class="card-img-top game" src="pics/csgo.png" alt="CS:GO" name="CS:GO">
+                    </li>
+                    <li style="width: 7rem;">
+                        <img class="card-img-top game" src="pics/rl.jpg" alt="Rocket League" name="Rocket League">
+                    </li>
+                    <li style="width: 7rem;">
+                        <img class="card-img-top game" src="pics/r6.jpg" alt="Rainbow 6" name="Rainbow 6">
+                    </li>
+                </ul>
+            </div>
+            <!-- /#sidebar-wrapper -->
+
+            <!-- Page Content -->
+            <div id="page-content-wrapper">
+                <div class="container-fluid">
+                    <div class="main">
+
+                        <div style="display: table; margin: 0 auto; width: 30em">
+                            <div class="input-group mb-3">
+                                <div class="input-group-prepend">
+                                    <span class="input-group-text" id="basic-addon1">></span>
+                                </div>
+                                <input type="text" class="form-control" id="new-game" placeholder="New Option" aria-label="New Option" aria-describedby="basic-addon1">
+                                <div class="input-group-append">
+                                    <button class="btn btn-outline-secondary" onClick="newGame()" type="button">Add</button>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div id="selected" />
+
+
+
+                    </div>
+                    <br />
+                    <button type="button" onclick="random()" class="btn btn-primary">Random</button>
+
+                </div>
+            </div>
+            <!-- /#page-content-wrapper -->
+
+        </div>
+
+
+    </main>
+
+    <!-- /.container -->
+
+    <!-- Bootstrap core JavaScript
+    ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+    <script src="app.js"></script>
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.3/js/bootstrap.min.js" integrity="sha384-a5N7Y/aK3qNeh15eJKGWxsqtnX/wWdSZSKp+81YjTmS15nvnvxKHuzaWwXHDli+4" crossorigin="anonymous"></script>
+</body>
+
+</html>
