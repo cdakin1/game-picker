@@ -60,7 +60,7 @@ function updateCollection() {
 
 function newGame() {
     const input = document.getElementById("new-game").value;
-    if (!input) return;
+    if (!input || collection.includes(input)) return;
 
     collection.push(input);
     updateCollection();
